@@ -1,4 +1,4 @@
-package Weapons;
+package weapons;
 
 import enemies.Enemy;
 import interfaces.IWeapon;

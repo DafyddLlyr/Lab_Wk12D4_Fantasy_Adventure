@@ -1,5 +1,6 @@
 package players.mages;
 
+import enemies.Enemy;
 import interfaces.IDefend;
 import interfaces.ISpell;
 import players.Player;
@@ -42,5 +43,11 @@ public abstract class Mage extends Player {
 
     public void addSpell(ISpell spell) {
         this.spells.add(spell);
+    }
+
+    public void cast(ISpell spell, Enemy enemy) {
+        if(this.spells.contains(spell)) {
+            spell.cast(this, enemy);
+        }
     }
 }

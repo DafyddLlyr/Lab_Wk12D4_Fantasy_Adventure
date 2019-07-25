@@ -1,5 +1,6 @@
 package players.mages;
 
+import enemies.Orc;
 import org.junit.Before;
 import org.junit.Test;
 import players.Player;
@@ -12,11 +13,15 @@ import static org.junit.Assert.assertTrue;
 public class WarlockTest {
 
     private Warlock warlock;
-    Dragon dragon;
+    private Dragon dragon;
+    private Fire fire;
+    private Orc orc;
 
     @Before
     public void setup() {
         warlock = new Warlock("Saruman", 200, 5, 100, dragon);
+        fire = new Fire();
+        orc = new Orc(100);
     }
 
     @Test
@@ -54,9 +59,21 @@ public class WarlockTest {
 
     @Test
     public void canAddSpell() {
-        Fire fire = new Fire();
         warlock.addSpell(fire);
         assertEquals(1, warlock.getSpells().size());
         assertTrue(warlock.getSpells().contains(fire));
+    }
+
+    @Test
+    public void canCastSpell() {
+        warlock.addSpell(fire);
+        warlock.cast(fire, orc);
+        assertEquals(75, orc.getHealth());
+    }
+
+    @Test
+    public void canOnlyCastSpellIfTheyHaveIt() {
+        warlock.cast(fire, orc);
+        assertEquals(100, orc.getHealth());
     }
 }

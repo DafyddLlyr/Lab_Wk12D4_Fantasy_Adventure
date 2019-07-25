@@ -1,6 +1,5 @@
-package WeaponTest;
+package weapons;
 
-import Weapons.Axe;
 import org.junit.Before;
 import org.junit.Test;
 import players.fighters.Dwarf;

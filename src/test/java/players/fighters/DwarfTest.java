@@ -1,6 +1,6 @@
 package players.fighters;
 
-import Weapons.Axe;
+import weapons.Axe;
 import enemies.Orc;
 import org.junit.Before;
 import org.junit.Test;
