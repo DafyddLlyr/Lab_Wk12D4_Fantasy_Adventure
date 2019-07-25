@@ -3,7 +3,7 @@ package WeaponTest;
 import Weapons.Axe;
 import org.junit.Before;
 import org.junit.Test;
-import players.Dwarf;
+import players.fighters.Dwarf;
 
 import static org.junit.Assert.assertEquals;
 

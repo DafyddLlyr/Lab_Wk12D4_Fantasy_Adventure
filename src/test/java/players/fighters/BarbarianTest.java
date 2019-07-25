@@ -1,6 +1,5 @@
-package players;
+package players.fighters;
 
-import enemies.Enemy;
 import enemies.Orc;
 import org.junit.Before;
 import org.junit.Test;

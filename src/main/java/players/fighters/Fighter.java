@@ -1,7 +1,8 @@
-package players;
+package players.fighters;
 
 import enemies.Enemy;
 import interfaces.IWeapon;
+import players.Player;
 
 import java.util.ArrayList;
 

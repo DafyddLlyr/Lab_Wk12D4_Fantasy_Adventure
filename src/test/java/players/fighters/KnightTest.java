@@ -1,4 +1,4 @@
-package players;
+package players.fighters;
 
 import Weapons.Axe;
 import enemies.Orc;

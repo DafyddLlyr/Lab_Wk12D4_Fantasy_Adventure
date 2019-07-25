@@ -2,7 +2,7 @@ package Weapons;
 
 import enemies.Enemy;
 import interfaces.IWeapon;
-import players.Fighter;
+import players.fighters.Fighter;
 
 public class Axe implements IWeapon {
 

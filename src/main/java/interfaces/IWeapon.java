@@ -1,7 +1,7 @@
 package interfaces;
 
 import enemies.Enemy;
-import players.Fighter;
+import players.fighters.Fighter;
 
 public interface IWeapon {
 
